@@ -9,11 +9,12 @@ controllers.controller('AppCtrl', function($scope) {
 
 });
 
-controllers.controller('ShotsListCtrl', function($scope, $http) {
-	$scope.list;
+controllers.controller('ShotsListCtrl', function($scope, $routeParams, $http) {
+
+	var list = $routeParams.list;
 
 	$http.jsonp(
-		'http://api.dribbble.com/shots/popular?callback=JSON_CALLBACK').then(
+		'http://api.dribbble.com/shots/' + list + '?callback=JSON_CALLBACK').then(
 		function(data) {
 			$scope.list = data.data;
 		})
