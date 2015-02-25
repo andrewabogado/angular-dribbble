@@ -14,3 +14,10 @@ body {
 .stat {
   margin-right: 10px;
 }
+
+.shot-title {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
