@@ -21,3 +21,23 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.shot-title-large {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.shot-avatar {
+  height: auto;
+  width: 60px;
+}
+
+.shot-image {
+  max-width: 100%;
+}
+
+.shot-meta-profile {
+  margin-bottom: 10px;
+}
