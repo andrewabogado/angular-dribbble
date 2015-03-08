@@ -1,6 +1,7 @@
 'use strict';
 
 var app = angular.module('dabbble', ['dabbble.controllers', 'dabbble.filters',
+	'dabbble.services',
 	'ngRoute'
 ]);
 
