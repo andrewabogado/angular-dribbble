@@ -26,11 +26,7 @@
         <p ng-bind-html-unsafe="comment.body"></p>
       </div>
     </div>
-    <button class="btn btn-primary"
-            ng-show="comments.page < comments.pages"
-            ng-click="comments.loadNextPage()">
-            Load More Comments
-    </button>
+    <button class="btn btn-primary" ng-click="loadNextPage()">Load More Comments</button>
   </div>
   
   <div class="col-md-3">
