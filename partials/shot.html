@@ -6,6 +6,8 @@
     <h1 class="shot-title shot-title-large">{{shot.title}}</h1>
     <span class="text-muted">By</span>
     <a href="#/players/{{shot.player.username}}">{{shot.player.name}}</a>
+    |
+    {{ shot.created_at | dabbbleDate: "MMM d, yyyy" }}
   </div>
 </div>
 

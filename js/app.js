@@ -1,18 +1,20 @@
 'use strict';
 
-var app = angular.module('dabbble', ['dabbble.controllers', 'ngRoute']);
+var app = angular.module('dabbble', ['dabbble.controllers', 'dabbble.filters',
+	'ngRoute'
+]);
 
 app.config(["$routeProvider", function($routeProvider) {
-  $routeProvider
-    .when("/shots/:id", {
-      controller: "ShotsCtrl",
-      templateUrl: "partials/shot.html"
-    })
-    .when("/:list", {
-      controller: "ShotsListCtrl",
-      templateUrl: "partials/shots_list.html"
-    })
-    .otherwise({
-      redirectTo: "/popular"
-    });
+	$routeProvider
+		.when("/shots/:id", {
+			controller: "ShotsCtrl",
+			templateUrl: "partials/shot.html"
+		})
+		.when("/:list", {
+			controller: "ShotsListCtrl",
+			templateUrl: "partials/shots_list.html"
+		})
+		.otherwise({
+			redirectTo: "/popular"
+		});
 }]);
